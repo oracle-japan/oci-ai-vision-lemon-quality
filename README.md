@@ -34,6 +34,9 @@ Kaggle: https://www.kaggle.com/datasets/yusufemir/lemon-quality-dataset
    + [データ・ラベリング](https://docs.oracle.com/ja-jp/iaas/data-labeling/data-labeling/using/home.htm)
    + [VIsion](https://docs.oracle.com/ja-jp/iaas/vision/vision/using/home.htm)
 
+1. Jupyter Notebook 環境の準備と Python ライブラリのインストールが必要です。  
+   oci, pandas, matplotlib など
+
 1. git と docker or podman が必要です。  
    GitHub からデータセットを取ってくるのに git が必要です。  
    rar ファイルを解凍するための unrar 用 docker イメージを作って実行します。  
