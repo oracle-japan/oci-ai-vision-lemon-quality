@@ -1,0 +1,10 @@
+.*
+__*__
+*.zip
+*.json
+
+!.gitignore
+
+lemon_dataset
+data
+
