@@ -3,13 +3,13 @@ import oci
 
 logger = logging.getLogger(__name__)
 
-## ~/.oci/config は固定
-## OCI_CONFIG_PROFILE でプロファイルを指定可能
+## 環境変数 OCI_CONFIG_FILE_LOC, OCI_CONFIG_PROFILE でプロファイルを指定可能
 def get_config_and_signer(file_location=None, profile_name=None):
     config = {}
     signer = None
+    default_file_loc = os.environ.get('OCI_CONFIG_FILE_LOC') if 'OCI_CONFIG_FILE_LOC' in os.environ else '~/.oci/config'
     default_profile_name = os.environ.get('OCI_CONFIG_PROFILE') if 'OCI_CONFIG_PROFILE' in os.environ else 'DEFAULT'
-    file_loc = '~/.oci/config' if not file_location else file_location
+    file_loc = file_location if file_location else default_file_loc
     if os.path.isfile(os.path.expanduser(file_loc)):
         profile = profile_name if profile_name else default_profile_name
         config = oci.config.from_file(os.path.expanduser(file_loc), profile)
