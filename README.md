@@ -6,9 +6,8 @@
 "Lemons quality control dataset" を使って、Oracle Cloud Infrastructure AI Service の画像分類を試します。  
 レモンの画像を機械学習を用いて "good", "bad", "empty" の3種類に分類します。  
 
-| | | |
-| ------------- | ------------- | ------------- |
 | good | bad | empty |
+| ------------- | ------------- | ------------- |
 | ![](https://github.com/robotduinom/lemon_dataset/blob/main/docs/examples/good_quality/good_quality_585.jpg?raw=true) | ![](https://github.com/robotduinom/lemon_dataset/blob/main/docs/examples/bad_quality/bad_quality_8.jpg?raw=true) | ![](https://github.com/robotduinom/lemon_dataset/blob/main/docs/examples/empty_background/empty_background_385.jpg?raw=true) |
 
 
