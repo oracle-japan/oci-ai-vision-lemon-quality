@@ -31,14 +31,15 @@ Kaggle: https://www.kaggle.com/datasets/yusufemir/lemon-quality-dataset
    `sampling_factor` を 0 から 1 の範囲の少数で指定して、扱うデータの数を絞ることができます。
     (小さくし過ぎると学習に失敗しますので、0.1 以上を推奨します)
 
-1. 関連するサービスの実行権限があることを確認して下さい。  
+1. 関連するOCIのサービス＆ツールの準備と実行権限があることを確認して下さい。  
+   + [SDK for Python](https://docs.oracle.com/ja-jp/iaas/Content/API/SDKDocs/pythonsdk.htm)
    + [オブジェクト・ストレージ](https://docs.oracle.com/ja-jp/iaas/Content/Object/home.htm)
    + [データ・ラベリング](https://docs.oracle.com/ja-jp/iaas/data-labeling/data-labeling/using/home.htm)
    + [VIsion](https://docs.oracle.com/ja-jp/iaas/vision/vision/using/home.htm)
 
-1. git と docker or podman が必要です。  
-   GitHub からデータセットを取ってくるのに git が必要です。  
-   rar ファイルを解凍するための unrar 用 docker イメージを作って実行します。  
-   podman を使っている場合は、Notebook の当該箇所を書き換えるか、エイリアス `alias docker=podman` を作成して下さい。
-
+1. 諸々のツール、モジュールのインストールが必要です。  
+   + GitHub からデータセットを取ってくるのに git が必要です。  
+   + rar ファイルを解凍するための unrar 用 docker イメージを作って実行します。  
+     podman を使っている場合は、Notebook の当該箇所を書き換えるか、エイリアス `alias docker=podman` を作成して下さい。
+   + python の必要なモジュールは pip を使ってインストールして下さい。   
 
